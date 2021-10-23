@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/degradado_fondo"
+    tools:context=".ui.menu.EscanerFragment">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="250dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+        app:srcCompat="@drawable/punto" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="333dp"
+        android:layout_height="410dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/antesscan"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/escanerStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="9dp"
+            android:text="Aquí podrás leer los códigos QR de tus restaurantes favoritos."
+            android:textAlignment="center"
+            android:textColor="#3D8E41"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/antesescaner" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
